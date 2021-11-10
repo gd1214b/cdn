@@ -98,46 +98,10 @@ jobs:
           plugin_topics_mode: starred
           plugin_topics_sort: stars
           plugin_traffic: yes
-# ====================================================================================
-  # ⏰ WakaTime plugin
-  
-  # Enable or disable plugin
-  plugin_wakatime:
-    description: Display WakaTime stats
-    default: yes
-  
-  # WakaTime API token
-  # See https://wakatime.com/settings/account get your API key
-  plugin_wakatime_token:
-    description: WakaTime API token
-    default: "db0d7c2b-01ee-445c-8d3c-4f697d186514"
-  
-  # Time range to use for displayed stats
-  plugin_wakatime_days:
-    description: WakaTime time range
-    default: 7
-  
-  # Sections to display
-  plugin_wakatime_sections:
-    description: Sections to display
-    default: time, projects, projects-graphs, languages, languages-graphs, editors, os
-  
-  # Number of entries to display per graph
-  # Set to 0 to disable limitations
-  plugin_wakatime_limit:
-    description: Maximum number of entries to display per graph
-    default: 5
-  
-  # If you use a selfhosted wakatime instance (wakapi)
-  # that is publicly available place your url here
-  #
-  # If you use the public wakapi instance the url
-  # would be https://wakapi.dev
-  plugin_wakatime_url:
-    description: Address where to reach your Wakatime instance
-    default: https://wakatime.com
-  
-  # Username on Wakatime
-  plugin_wakatime_user:
-    description: Your Wakatime user on the selfhosted Wakapi instance
-    default: gd1214b
+          plugin_wakatime: yes
+          plugin_wakatime_days: 7
+          plugin_wakatime_limit: 5
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          plugin_wakatime_url: https://wakatime.com
+          plugin_wakatime_user: gd1214b
+          plugin_wakatime_token: db0d7c2b-01ee-445c-8d3c-4f697d186514
